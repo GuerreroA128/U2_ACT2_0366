@@ -1,43 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:guerrero0366/pantalla1_0366.dart';
+import 'package:guerrero0366/pantalla2_0366.dart';
+import 'package:guerrero0366/pantalla3_0366.dart';
+import 'package:guerrero0366/pantalla4_0366.dart';
+import 'package:guerrero0366/pantalla5_0366.dart';
+import 'package:guerrero0366/pantalla6_0366.dart';
+import 'package:guerrero0366/pantalla7_0366.dart';
+import 'package:guerrero0366/pantalla8_0366.dart';
+import 'package:guerrero0366/pantalla9_0366.dart';
+import 'package:guerrero0366/pantalla10_0366.dart';
+import 'package:guerrero0366/pantalla11_0366.dart';
+import 'package:guerrero0366/pantalla12_0366.dart';
+import 'package:guerrero0366/pantalla13_0366.dart';
+import 'package:guerrero0366/pantalla14_0366.dart';
+import 'package:guerrero0366/pantalla15_0366.dart';
+import 'package:guerrero0366/pantalla16_0366.dart';
+import 'package:guerrero0366/pantallainicial_0366.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MiApp0366());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MiApp0366 extends StatelessWidget {
+  const MiApp0366({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
-    );
-  }
-}
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const PantallaInicial_0366(),
+          '/Pantalla1_0366': (context) => const Pantalla1_0366(),
+          '/Pantalla2_0366': (context) => const Pantalla2_0366(),
+          '/Pantalla3_0366': (context) => const Pantalla3_0366(),
+          '/Pantalla4_0366': (context) => const Pantalla4_0366(),
+          '/Pantalla5_0366': (context) => const Pantalla5_0366(),
+          '/Pantalla6_0366': (context) => const Pantalla6_0366(),
+          '/Pantalla7_0366': (context) => const Pantalla7_0366(),
+          '/Pantalla8_0366': (context) => const Pantalla8_0366(),
+          '/Pantalla9_0366': (context) => const Pantalla9_0366(),
+          '/Pantalla10_0366': (context) => const Pantalla10_0366(),
+          '/Pantalla11_0366': (context) => const Pantalla11_0366(),
+          '/Pantalla12_0366': (context) => const Pantalla12_0366(),
+          '/Pantalla13_0366': (context) => const Pantalla13_0366(),
+          '/Pantalla14_0366': (context) => const Pantalla14_0366(),
+          '/Pantalla15_0366': (context) => const Pantalla15_0366(),
+          '/Pantalla16_0366': (context) => const Pantalla16_0366(),
+        });
+  } // Fin widget
+} // Fin de MiApp0366
